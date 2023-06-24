@@ -442,6 +442,7 @@ services:
       - POSTGRESQL_REPLICATION_USER=repl_user
       - POSTGRESQL_REPLICATION_PASSWORD=repl_password
       - POSTGRESQL_MASTER_HOST=postgresql-master
+      - POSTGRESQL_PASSWORD=my_password
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
   postgresql-slave2:
     image: 'bitnami/postgresql:latest'
@@ -454,6 +455,7 @@ services:
       - POSTGRESQL_REPLICATION_USER=repl_user
       - POSTGRESQL_REPLICATION_PASSWORD=repl_password
       - POSTGRESQL_MASTER_HOST=postgresql-master
+      - POSTGRESQL_PASSWORD=my_password
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
 ```
 
